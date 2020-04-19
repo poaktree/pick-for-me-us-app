@@ -1,0 +1,15 @@
+1) 'npx create-react-app pick-for-me-us' to easily set up a React app.
+
+2) 'npm install react-bootstrap bootstrap' to allow the use of Bootstrap in our React app.
+
+3) 'npm install node-sass' to allow the use of SASS in our React app.
+
+4) 'npm i --save @fortawesome/fontawesome-svg-core', 'npm i --save @fortawesome/free-solid-svg-icons', and 'npm i --save @fortawesome/react-fontawesome' to allow the use of Font Awesome's icons in our React app.
+
+5) 'npm start' to start this React app in development mode.
+
+6) 'npm install axios' to allow the front and back-end of our app to communicate.
+
+7) 'npm install -g json-server' to quickly create a mock back-end.
+
+8) 'json-server --watch db.json --port 3001' to get our mock back-end up and running.

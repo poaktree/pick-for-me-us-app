@@ -1,0 +1,35 @@
+@import "../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../node_modules/bootstrap/scss/_variables.scss";
+
+/* We override Bootstrap's 'grid-breakpoints' SASS variable to set our own grid breakpoints
+
+We added the 'xxl', 'xxxl', 'xxxxl', and 'xxxxxl' grid breakpoints */
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px,
+  xxxl: 1600px,
+  xxxxl: 1920px,
+  xxxxxl: 2560px,
+);
+
+/* We override Bootstrap's 'container-max-widths' SASS variable to set our own container max widths
+
+We added the 'xxl', 'xxxl', 'xxxxl', and 'xxxxxl' container max widths */
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1220px,
+  xxl: 1380px,
+  xxxl: 1520px,
+  xxxxl: 1820px,
+  xxxxxl: 2360px,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,41 @@
+--- Used commands for development ---
+
+1) 'npm init' to create a Node.js project;
+
+2) 'npm install express --save' to allow for the creation of an 'Express' server;
+
+3) 'npm install -g nodemon' to avoid having to manually restart our 'Express' server with every change that is made to it;
+
+4) 'npm install dotenv' to allow the use of '.env' files and their contents (i.e., environment variables);
+
+5) 'npm install cors' to allow our 'Express' server to receive requests from all origins;
+
+6) 'npm install body-parser' to do two things:
+ 1) turn the body of all 'POST' requests our 'Express' server receives into a JavaScript object, and (...)
+ 2) attach that JavaScript object to the 'body' property of the 'request' object before any of the requests' event handlers are called;
+
+7) 'npm install mongoose' to make use of the 'mongoose' library, which will allow our 'Express' server to easily interact with our 'MongoDB' database;
+
+8.a) 'node server.js' to start our Node.js project the traditional way;
+
+8.b) 'nodemon server.js' to start our Node.js project with the 'nodemon' module.
+
+--- Used commands for production ---
+
+1) Create a file called 'Procfile' and add 'web: node server.js' to it;
+
+2) 'heroku login' to log into one's Heroku account;
+
+3) 'heroku create pick-for-me-us-app' to create an Heroku app, which will host all of our front and back-end code;
+
+4) 'git init' creates a local repository with our app's front and back-end code;
+
+5) 'heroku git:remote -a pick-for-me-us-app' links our local git repository with the remote one that's on our created Heroku app;
+
+6.1) 'git add .' to stage all of our project's files;
+6.2) 'git commit -am "Message"' to commit our changes to our local git repository;
+6.3) 'git push heroku master' to push our local repository's files to Heroku's remote repository.
+
+7) Add our '.env' file's environment variables to Heroku by:
+ 1) Doing 'heroku config:set NAME_OF_ENVIRONMENT_VARIABLE = value_of_environment_variable' on our command line;
+ 2) Heading to the 'Settings' section of the Heroku website, and setting them from there.
